@@ -1,0 +1,380 @@
+
+/* ==============================
+   EDIT APPLICATION - MAIN LAYOUT
+============================== */
+
+.edit-layout {
+  width: 100vw;
+  max-width: 100vw;
+  min-height: 100vh;
+  margin-left: calc(50% - 50vw);
+  display: flex;
+  background: #f1f6ff;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #172554;
+  box-sizing: border-box;
+}
+
+/* ==============================
+   SIDEBAR
+============================== */
+
+.edit-sidebar {
+  width: 275px;
+  min-width: 275px;
+  min-height: 100vh;
+  padding: 30px 20px;
+  background: #fff;
+  border-right: 1px solid #dce6f7;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.edit-sidebar .sidebar-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 15px;
+  margin-bottom: 55px;
+}
+
+.edit-sidebar .logo-icon {
+  font-size: 36px;
+}
+
+.edit-sidebar .sidebar-logo h2 {
+  margin: 0;
+  font-size: 27px;
+  font-weight: 800;
+  color: #102452;
+}
+
+.edit-sidebar .sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.edit-sidebar .sidebar-link {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 0 18px;
+  border-radius: 13px;
+  color: #40557f;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.edit-sidebar .sidebar-link span {
+  width: 30px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.edit-sidebar .sidebar-link:hover,
+.edit-sidebar .sidebar-link.active {
+  background: #e8efff;
+  color: #0754ed;
+}
+
+.edit-sidebar .sidebar-link.active {
+  border-left: 3px solid #155eef;
+  font-weight: 700;
+}
+
+.edit-sidebar .sidebar-promo {
+  margin-top: auto;
+  margin-bottom: 15px;
+  padding: 25px 15px;
+  border-radius: 18px;
+  background: #eaf1ff;
+  text-align: center;
+}
+
+.edit-sidebar .promo-illustration {
+  font-size: 85px;
+  margin-bottom: 15px;
+}
+
+.edit-sidebar .sidebar-promo h3 {
+  color: #0754ed;
+  font-size: 17px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ==============================
+   MAIN PAGE
+============================== */
+
+.edit-page {
+  flex: 1;
+  min-width: 0;
+  padding: 30px 35px;
+  box-sizing: border-box;
+  background: #f1f6ff;
+}
+
+.edit-header {
+  max-width: 900px;
+  margin: 0 auto 22px;
+}
+
+.edit-back {
+  display: inline-block;
+  margin-bottom: 18px;
+  color: #0754ed;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.edit-back:hover {
+  color: #0343c7;
+}
+
+.edit-header h1 {
+  margin: 0 0 10px;
+  color: #101d42;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.edit-header p {
+  margin: 0;
+  color: #52658d;
+  font-size: 17px;
+}
+
+/* ==============================
+   FORM
+============================== */
+
+.edit-form {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 22px;
+  row-gap: 17px;
+  background: #fff;
+  border: 1px solid #e2eaf9;
+  border-radius: 16px;
+  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.06);
+  box-sizing: border-box;
+}
+
+.edit-field {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+
+.edit-field label {
+  color: #101d42;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.edit-field input,
+.edit-field select,
+.edit-field textarea {
+  width: 100%;
+  min-height: 46px;
+  padding: 0 13px;
+  border: 1px solid #cbdaf6;
+  border-radius: 10px;
+  background: #f8faff;
+  color: #172554;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.edit-field textarea {
+  min-height: 75px;
+  padding: 12px 13px;
+  resize: vertical;
+}
+
+.edit-field input::placeholder,
+.edit-field textarea::placeholder {
+  color: #64748b;
+}
+
+.edit-field input:focus,
+.edit-field select:focus,
+.edit-field textarea:focus {
+  border-color: #0754ed;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(7, 84, 237, 0.09);
+}
+
+.edit-notes {
+  grid-column: 1 / -1;
+}
+
+/* ==============================
+   ERROR MESSAGE
+============================== */
+
+.edit-error {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 12px 15px;
+  border-radius: 10px;
+  background: #fee2e2;
+  color: #dc2626;
+  font-size: 14px;
+}
+
+/* ==============================
+   BUTTONS
+============================== */
+
+.edit-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 5px;
+}
+
+.edit-cancel,
+.edit-save {
+  min-width: 175px;
+  min-height: 48px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.2s;
+  box-sizing: border-box;
+}
+
+.edit-cancel {
+  background: #eaf1ff;
+  color: #0754ed;
+}
+
+.edit-cancel:hover {
+  background: #d9e6ff;
+}
+
+.edit-save {
+  background: #0754ed;
+  color: #fff;
+  box-shadow: 0 5px 12px rgba(7, 84, 237, 0.15);
+}
+
+.edit-save:hover {
+  background: #0343c7;
+  transform: translateY(-2px);
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1100px) {
+  .edit-sidebar {
+    width: 230px;
+    min-width: 230px;
+  }
+
+  .edit-page {
+    padding: 25px;
+  }
+
+  .edit-header h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 750px) {
+  .edit-layout {
+    flex-direction: column;
+  }
+
+  .edit-sidebar {
+    width: 100%;
+    min-width: 0;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .edit-sidebar .sidebar-logo {
+    margin-bottom: 15px;
+  }
+
+  .edit-sidebar .sidebar-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .edit-sidebar .sidebar-link {
+    width: auto;
+    min-height: 45px;
+    padding: 8px 12px;
+    font-size: 13px;
+    gap: 5px;
+  }
+
+  .edit-sidebar .sidebar-link span {
+    width: auto;
+    font-size: 18px;
+  }
+
+  .edit-sidebar .sidebar-promo {
+    display: none;
+  }
+
+  .edit-page {
+    width: 100%;
+    padding: 25px 15px;
+  }
+
+  .edit-header h1 {
+    font-size: 28px;
+  }
+
+  .edit-form {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .edit-notes {
+    grid-column: 1;
+  }
+
+  .edit-actions {
+    flex-direction: column-reverse;
+  }
+
+  .edit-cancel,
+  .edit-save {
+    width: 100%;
+    min-width: 0;
+  }
+}
