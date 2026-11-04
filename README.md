@@ -52,6 +52,18 @@ JobTrack/
 3. Start the development server:
    `npm run dev`
 
+##  Screenshots
+### Login
+![Login](screenshots/login.png)
+### Register
+![Register](screenshots/register.png)
+### Dashboard
+![Dashboard](screenshots/dashboard.png)
+### Add Application
+![Add Application](screenshots/add%20application.png)
+### My Applications
+![My Applications](screenshots/my%20application.png)
+
 ## Author
 
 Wiam Bouazizi
