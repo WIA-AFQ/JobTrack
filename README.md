@@ -15,6 +15,8 @@ JobTrack is a full-stack web application designed to help users manage and organ
 ### Backend
 - PHP
 - Laravel
+
+### Database
 - MySQL
 
 ## Main Features
